@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 function Nav({ isOpen }) {
   return (
     <nav
-      className={`flex justify-center items-start px-3 bg-black md:block  md:static md:w ${
-        isOpen ? "block h-screen w-full" : "hidden"
+      className={`transition-all duration-500 h-screen absolute top-0 w-full flex justify-center items-start md:px-3 bg-black md:block  md:static  ${
+        isOpen ? "left-0 block h-screen w-full" : "-left-full"
       }`}
     >
-      <ul className=" flex flex-col gap-10 font-semibold text-4xl  md:text-xl md:gap-10 md:flex  m-52 text-white">
+      <ul className=" flex flex-col gap-10 font-semibold text-4xl  md:text-xl md:gap-10 md:flex-row  m-52 text-white">
         <li>
           <NavLink to="/home">Home</NavLink>
         </li>
