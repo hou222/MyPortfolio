@@ -1,26 +1,28 @@
 import { useState } from "react";
 import Nav from "./Nav";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="h-auto w-full flex justify-between items-center px-3 py-6 text-white">
+    <header className=" flex justify-between items-center px-3 py-6 text-white md:bg-gray-800">
       <p className="z-10 text-3xl font-bold ">Portfolio.</p>
+
       <Nav isOpen={isOpen} />
 
       {!isOpen ? (
         <button
-          className="z-1 md:hidden bg-red-400 "
+          className="z-1 md:hidden "
           onClick={() => setIsOpen((open) => !open)}
         >
-          |||
+          <IoMenu className="h-10 w-10" />
         </button>
       ) : (
         <button
           className="z-1 text-white relative "
           onClick={() => setIsOpen((open) => !open)}
         >
-          X
+          <IoClose className="h-10 w-10" />
         </button>
       )}
 
