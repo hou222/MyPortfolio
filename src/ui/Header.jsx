@@ -5,7 +5,7 @@ import { IoMenu, IoClose } from "react-icons/io5";
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className=" flex justify-between items-center px-3 py-6 text-white md:bg-gray-800">
+    <header className="z-10 flex justify-between items-center px-3 py-6 fixed top-0 left-0 right-0 text-white ">
       <p className="z-10 text-3xl font-bold ">Portfolio.</p>
 
       <Nav isOpen={isOpen} />
