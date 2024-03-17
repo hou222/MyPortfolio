@@ -1,35 +1,53 @@
-import { FaHouseChimney } from "react-icons/fa6";
-import { FaPhone } from "react-icons/fa";
+import { FaHouseChimney, FaXTwitter } from "react-icons/fa6";
+import { FaPhone, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="bg-[#141414] text-white grid grid-cols-2 p-11">
-      <ul className="bg-red-400 p-5 ">
-        <li className="inline-">
+    <div className="bg-[#111111] text-white grid grid-cols-1 md:grid-cols-2  p-11">
+      <ul className="p-5 ">
+        <li className="flex gap-3">
           <FaHouseChimney />
           <a>Biskra ,Algeria</a>
         </li>
-        <li>
+        <li className="flex gap-3">
           <FaPhone />
           <span>+213 699888694</span>
         </li>
-        <li>
+        <li className="flex gap-3">
           <MdEmail />
           <span>houssambenlagha0@gmail.com</span>
         </li>
       </ul>
 
-      <div className="p-5">
+      <div className="p-5 flex flex-col justify-center items-start gap-2">
         <p className="font-semibold">About the company</p>
         <p>
           This is me Houssam Benlagha. I enjoy discussing new projects and
           design challenges.
         </p>
-        <div>
-          <a>F</a>
-          <a>T</a>
-          <a>L</a>
+        <div className="flex gap-3">
+          <a
+            href="https://www.facebook.com/houssam.benlagha/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className="w-7 h-7" />
+          </a>
+          <a
+            href="https://twitter.com/Houssambenlagha"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaXTwitter className="w-7 h-7" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/hou-ssam-112862299/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="w-7 h-7" />
+          </a>
         </div>
       </div>
     </div>
