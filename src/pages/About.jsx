@@ -18,7 +18,7 @@ function About() {
         </div>
       </div>
       <div className="bg-black  flex flex-col md:flex-row">
-        <div className="flex flex-col md:w-1/2 justify-center items-center gap-3  p-5 md:py-40">
+        <div className="flex flex-col md:w-1/2 justify-center items-center gap-3  p-14 md:py-40">
           <p className="text-2xl md:text-4xl font-bold text-white">Who AM I</p>
           <p className=" font-semibold text-center  w-[280px]  md:text-lg text-white">
             Im a react front-end developer. I create responsive secure websites
@@ -26,16 +26,16 @@ function About() {
           </p>
           <Button type="normal">CONTACT</Button>
         </div>
-        <div className="relative h- md:w-1/2">
+        <div className="relative h-[230px] md:w-1/2">
           <img
             src="../src/data/react2.webp"
             alt=""
-            className="w-[500px] h-[320px] absolute top-20 left-72"
+            className="w-[240px] h-[150px] md:w-[500px] md:h-[320px] absolute top-7 left-28  md:top-20 md:left-72"
           />
           <img
             src="../src/data/react1.jpg"
             alt=""
-            className="w-[420px] h-[280px] absolute left-28 top-36"
+            className="w-[200px] h-[130px] md:w-[420px] md:h-[280px]  absolute left-7 top-16 md:left-28 md:top-36"
           />
         </div>
       </div>

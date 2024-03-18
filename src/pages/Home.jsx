@@ -17,7 +17,7 @@ function Home() {
             <div className="flex flex-row gap-2 ">
               <Button type="normal">PROJECTS</Button>
 
-              <button className="border-2 py-3 px-10 text-white text-sm font-semibold hover:bg-[#8b8b8b82]">
+              <button className="border-2 py-3 px-10 text-white text-sm font-semibold hover:bg-[#8b8b8b82] hover:transition-all hover:duration-500">
                 CONTACT
               </button>
             </div>
