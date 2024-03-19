@@ -19,7 +19,7 @@ function Contact() {
         </div>
       </div>
       <div className="bg-black text-white flex flex-row justify-center items-center  py-10 px-4">
-        <div className="w-1/3 flex flex-col justify-center items-start">
+        <div className="w-full md:w-1/2 lg:w-1/3 flex flex-col justify-center items-start">
           <label className="font-semibold mb-1">Your Name</label>
           <Input type="text" />
           <label className="font-semibold mb-1">Email</label>

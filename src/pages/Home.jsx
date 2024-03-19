@@ -1,8 +1,10 @@
 import Container from "../ui/Container";
 import Projects from "../features/Projects";
 import Button from "../ui/Button";
+import { useNavigate } from "react-router-dom";
 
 function Home() {
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -15,9 +17,14 @@ function Home() {
               React Developer.
             </p>
             <div className="flex flex-row gap-2 ">
-              <Button type="normal">PROJECTS</Button>
+              <Button type="normal" onClick={() => navigate("/project")}>
+                PROJECTS
+              </Button>
 
-              <button className="border-2 py-3 px-10 text-white text-sm font-semibold hover:bg-[#8b8b8b82] hover:transition-all hover:duration-500">
+              <button
+                className="border-2 py-3 px-10 text-white text-sm font-semibold hover:bg-[#8b8b8b82] hover:transition-all hover:duration-500"
+                onClick={() => navigate("/contact")}
+              >
                 CONTACT
               </button>
             </div>
