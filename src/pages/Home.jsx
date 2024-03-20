@@ -2,6 +2,7 @@ import Container from "../ui/Container";
 import Projects from "../features/Projects";
 import Button from "../ui/Button";
 import { useNavigate } from "react-router-dom";
+import Skills from "../features/skills/Skills";
 
 function Home() {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <Skills />
       <Projects />
     </>
   );
