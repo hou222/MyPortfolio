@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 function Nav({ isOpen, handleOpen }) {

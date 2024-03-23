@@ -4,10 +4,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Project from "./pages/Project";
 import Contact from "./pages/Contact";
+import { ScrollToTop } from "./utils/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate replace to="home" />} />
