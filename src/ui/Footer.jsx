@@ -42,7 +42,7 @@ function Footer() {
             <FaXTwitter className="w-7 h-7" />
           </a>
           <a
-            href="https://www.linkedin.com/in/hou-ssam-112862299/"
+            href="https://www.linkedin.com/in/ben-hou222"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -3,11 +3,7 @@ import Button from "../../ui/Button";
 function ProjectDetails({ imageName }) {
   return (
     <div className="bg-gray-800 w-[350px] md:w-[350px] lg:w-[400px]  p-3 flex flex-col gap-2">
-      <img
-        src={`../src/data/${imageName}.png`}
-        alt=""
-        className="h-46 w-full"
-      />
+      <img src={imageName} alt="project photo" className="h-46 w-full" />
       <h1 className="text-white font-semibold text-xl">
         LMS/Course Website Design
       </h1>

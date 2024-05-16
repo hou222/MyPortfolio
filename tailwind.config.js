@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        home: "url('../src/data/intro-bg.jpg')",
-        project: "url('../src/data/project-bg.jpg')",
+        home: "url('/src/data/intro-bg.jpg')",
+        project: "url('/src/data/project-bg.jpg')",
       },
     },
   },

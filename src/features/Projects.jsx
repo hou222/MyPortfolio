@@ -7,9 +7,9 @@ function Projects() {
         Projects
       </p>
       <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
-        <ProjectDetails imageName="project1" />
-        <ProjectDetails imageName="project2" />
-        <ProjectDetails imageName="project3" />
+        <ProjectDetails imageName="src/data/project1.png" />
+        <ProjectDetails imageName="src/data/project1.png" />
+        <ProjectDetails imageName="src/data/project1.png" />
       </div>
     </div>
   );

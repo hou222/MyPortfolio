@@ -1,6 +1,4 @@
-import { Container } from "postcss";
 import Projects from "../features/Projects";
-import Button from "../ui/Button";
 
 function Project() {
   return (
