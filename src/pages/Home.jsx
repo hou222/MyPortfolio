@@ -12,7 +12,7 @@ function Home() {
       >
         <div className="bg-[#000000bd] w-full h-screen flex justify-center items-center">
           <div className=" flex flex-col justify-center items-center gap-3 ">
-            <p className="text-white font-semibold text-xl">{`HI, I'M HOUSSAM BENLAGHA`}</p>
+            <p className="text-white font-semibold text-xl">{`HI, I'M HOUSSEM BENLAGHA`}</p>
             <p className="text-white text-5xl font-bold w-60 text-center  leading-snug md:w-auto md:text-6xl lg:text-7xl md:mb-2">
               React Developer.
             </p>

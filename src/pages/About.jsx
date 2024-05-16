@@ -1,4 +1,6 @@
 import Button from "../ui/Button";
+import react1 from "../data/react1.jpg";
+import react2 from "../data/react2.webp";
 
 function About() {
   return (
@@ -28,12 +30,12 @@ function About() {
         </div>
         <div className="relative h-[230px] md:w-1/2">
           <img
-            src="../src/data/react2.webp"
+            src={react2}
             alt=""
             className="w-[240px] h-[150px] md:w-[500px] md:h-[320px] absolute top-7 left-28  md:top-20 md:left-72"
           />
           <img
-            src="../src/data/react1.jpg"
+            src={react1}
             alt=""
             className="w-[200px] h-[130px] md:w-[420px] md:h-[280px]  absolute left-7 top-16 md:left-28 md:top-36"
           />
