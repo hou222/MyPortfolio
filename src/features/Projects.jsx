@@ -10,7 +10,7 @@ function Projects() {
       image: project1,
     },
     {
-      live: "https://vercel.com/hou222s-projects/furniture-world",
+      live: "https://furniture-world.vercel.app",
       code: "https://github.com/hou222/FurnitureWorld",
       image: project2,
     },
