@@ -3,7 +3,7 @@ function ProjectDetails({ project, children }) {
     <div className="bg-gray-800 w-[350px] md:w-[350px] lg:w-[400px]  p-3 flex flex-col gap-2">
       <img src={project.image} alt="project photo" className="h-48 w-full" />
       <h1 className="text-white font-semibold text-xl">{project.title}</h1>
-      <p className="text-white tracking-widest">{children}</p>
+      <p className="text-white tracking-widest h-[150px]q">{children}</p>
       <div
         className="flex
       justify-between items-center py-2"

@@ -1,6 +1,7 @@
 import ProjectDetails from "./projects/ProjectDetails";
 import project1 from "../data/project1.png";
 import project2 from "../data/project23.png";
+import project3 from "../data/project33.png";
 
 function Projects() {
   const projects = [
@@ -22,6 +23,15 @@ function Projects() {
       tools: "Reat.js, Tailwind.",
       image: project2,
     },
+    {
+      live: "https://crypto-tracker-gamma-navy.vercel.app/",
+      code: "https://github.com/hou222/CryptoTracker",
+      title: "Coin wave",
+      description:
+        "Coin wave is an app displaying real-time prices, 24-hour percentage changes, market caps, and historical charts for each coin.",
+      tools: "Reat.js, Tailwind.",
+      image: project3,
+    },
   ];
 
   return (
@@ -29,7 +39,7 @@ function Projects() {
       <p className="text-white font-bold text-3xl text-center  pb-11">
         Projects
       </p>
-      <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-2 ">
+      <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
         {/* <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 "> */}
         {projects.map((project) => (
           <ProjectDetails key={project.code} project={project}>
