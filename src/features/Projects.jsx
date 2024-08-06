@@ -43,9 +43,9 @@ function Projects() {
         {/* <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 "> */}
         {projects.map((project) => (
           <ProjectDetails key={project.code} project={project}>
-            {project.description}
+            {/* {project.description}
             <br></br>
-            <br></br> built with : {project.tools}
+            <br></br> built with : {project.tools} */}
           </ProjectDetails>
         ))}
 
