@@ -2,17 +2,28 @@ import ProjectDetails from "./projects/ProjectDetails";
 import project1 from "../data/project1.png";
 import project2 from "../data/project23.png";
 import project3 from "../data/project33.png";
+import project4 from "../data/project44.png";
 
 function Projects() {
   const projects = [
     {
-      live: "https://tempoweather.netlify.app/",
-      code: "https://github.com/hou222/weatherApp",
-      title: "'Tempo' Weather App",
+      live: "https://gym-type.vercel.app/",
+      code: "https://github.com/hou222/GymType",
+      title: "Gym type",
       description:
-        "Tempo is a straightforward web application that allows users to check weather forecasts for any city.",
-      tools: "HTML, CSS, Java Script.",
-      image: project1,
+        "Achieve your dream body with unrivaled gym facilities, unparalleled training classes, and world-class studios.",
+      tools: "Reat.js, TypeScript, Tailwind.",
+      image: project4,
+    },
+
+    {
+      live: "https://crypto-tracker-gamma-navy.vercel.app/",
+      code: "https://github.com/hou222/CryptoTracker",
+      title: "Coin wave",
+      description:
+        "Coin wave is an app displaying real-time prices, 24-hour percentage changes, market caps, and historical charts for each coin.",
+      tools: "Reat.js, Tailwind.",
+      image: project3,
     },
     {
       live: "https://furniture-world.vercel.app",
@@ -23,19 +34,20 @@ function Projects() {
       tools: "Reat.js, Tailwind.",
       image: project2,
     },
+
     {
-      live: "https://crypto-tracker-gamma-navy.vercel.app/",
-      code: "https://github.com/hou222/CryptoTracker",
-      title: "Coin wave",
+      live: "https://tempoweather.netlify.app/",
+      code: "https://github.com/hou222/weatherApp",
+      title: "'Tempo' Weather App",
       description:
-        "Coin wave is an app displaying real-time prices, 24-hour percentage changes, market caps, and historical charts for each coin.",
-      tools: "Reat.js, Tailwind.",
-      image: project3,
+        "Tempo is a straightforward web application that allows users to check weather forecasts for any city.",
+      tools: "HTML, CSS, Java Script.",
+      image: project1,
     },
   ];
 
   return (
-    <div className="bg-black lg:h-screen py-11 flex flex-col  justify-center items-center">
+    <div className="bg-black  py-11 flex flex-col  justify-center items-center ">
       <p className="text-white font-bold text-3xl text-center  pb-11">
         Projects
       </p>
