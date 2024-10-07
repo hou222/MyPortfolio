@@ -12,7 +12,7 @@ function Projects() {
       title: "Gym type",
       description:
         "Achieve your dream body with unrivaled gym facilities, unparalleled training classes, and world-class studios.",
-      tools: "Reat.js, TypeScript, Tailwind.",
+      tools: "React.js, TypeScript, Tailwind.",
       image: project4,
     },
 
@@ -22,7 +22,7 @@ function Projects() {
       title: "Coin wave",
       description:
         "Coin wave is an app displaying real-time prices, 24-hour percentage changes, market caps, and historical charts for each coin.",
-      tools: "Reat.js, Tailwind.",
+      tools: "React.js, Tailwind.",
       image: project3,
     },
     {
@@ -31,7 +31,7 @@ function Projects() {
       title: "Furniture world",
       description:
         "This store prioritize user experience, making it easy for cusomers to find and purchase the products they need.",
-      tools: "Reat.js, Tailwind.",
+      tools: "React.js, Tailwind.",
       image: project2,
     },
 
