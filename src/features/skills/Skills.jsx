@@ -5,12 +5,15 @@ import css from "../../data/css.png";
 import responsive from "../../data/responsive.png";
 import react from "../../data/react.png";
 import tailwind from "../../data/tailwind.png";
+import typescript from "../../data/typescript.png";
 
 function Skills() {
   return (
-    <div className="bg-black py-11 flex flex-col  justify-center items-center">
-      <p className="text-white font-bold text-3xl text-center  pb-11">Skills</p>
-      <div className=" w-fit mb-11 grid grid-cols-3 gap-3 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
+    <div className="bg-black pt-11 pb-14 flex flex-col  justify-center items-center gap-3 lg:gap-10">
+      <p className="text-white font-bold text-3xl text-center  pb-5 lg:pb-0">
+        Skills
+      </p>
+      <div className=" w-fit  grid grid-cols-3 gap-3 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
         <Skill skillName={html}>HTML</Skill>
 
         <Skill skillName={css}>CSS</Skill>
@@ -18,8 +21,8 @@ function Skills() {
         <Skill skillName={tailwind}>TAILWIND</Skill>
         <Skill skillName={responsive}>Responsive Design</Skill>
         <Skill skillName={react}>REACT</Skill>
-        {/*<Skill skillName="tailwind" /> */}
       </div>
+      <Skill skillName={typescript}>TypeScript</Skill>
     </div>
   );
 }

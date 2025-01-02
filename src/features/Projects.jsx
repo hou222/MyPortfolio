@@ -36,7 +36,7 @@ function Projects() {
     },
 
     {
-      live: "https://tempoweather.netlify.app/",
+      live: "https://weatheer-appp.netlify.app/",
       code: "https://github.com/hou222/weatherApp",
       title: "'Tempo' Weather App",
       description:
