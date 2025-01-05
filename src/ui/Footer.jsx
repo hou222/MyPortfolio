@@ -1,5 +1,5 @@
 import { FaHouseChimney, FaXTwitter } from "react-icons/fa6";
-import { FaPhone, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 function Footer() {
@@ -47,6 +47,13 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <FaLinkedin className="w-7 h-7" />
+          </a>
+          <a
+            href="https://github.com/hou222"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="w-7 h-7" />
           </a>
         </div>
       </div>

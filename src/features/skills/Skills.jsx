@@ -10,7 +10,7 @@ import typescript from "../../data/typescript.png";
 function Skills() {
   return (
     <div className="bg-black pt-11 pb-14 flex flex-col  justify-center items-center gap-3 lg:gap-10">
-      <p className="text-white font-bold text-3xl text-center  pb-5 lg:pb-0">
+      <p className="text-white font-bold text-3xl text-center pb-5 lg:pb-0">
         Skills
       </p>
       <div className=" w-fit  grid grid-cols-3 gap-3 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
