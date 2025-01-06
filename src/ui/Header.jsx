@@ -36,25 +36,6 @@ function Header() {
           <IoClose className="h-10 w-10" />
         </button>
       )}
-
-      {/* --------------------------------------------------------------------------------------------------------------- */}
-      {/* <div className="flex bg-black justify-between items-center px-3 py-6 text-white">
-        <p className=" text-3xl font-bold">Portfolio.</p>
-
-        {!isOpen ? (
-          <button
-            className="md:hidden bg-red-400"
-            onClick={() => setIsOpen((open) => !open)}
-          >
-            |||
-          </button>
-        ) : (
-          <button className="z-1 " onClick={() => setIsOpen((open) => !open)}>
-            X
-          </button>
-        )}
-      </div>
-      <Nav isOpen={isOpen} /> */}
     </header>
   );
 }
