@@ -14,15 +14,15 @@ function Header() {
   }
   return (
     <header
-      className={` z-10 flex justify-between items-center px-3 py-6 fixed top-0 left-0 right-0 text-white transition-all duration-1000 ${
-        scroll ? "bg-[#000000de]" : "bg-transparent"
+      className={` z-10 flex justify-between items-center px-3 py-1 fixed top-0 left-0 right-0 text-black transition-all duration-1000 ${
+        scroll ? "bg-white" : "bg-transparent"
       }`}
     >
       <p
         className="z-10 text-3xl font-bold hover:cursor-pointer"
         onClick={() => navigate("/home")}
       >
-        Portfolio.
+        HM
       </p>
 
       <Nav isOpen={isOpen} handleOpen={handleOpen} />
