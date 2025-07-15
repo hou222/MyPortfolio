@@ -4,7 +4,7 @@ import { motion } from "motion/react";
 function PortfolioImage() {
   return (
     <motion.div
-      className="w-[200px] h-[200px] overflow-hidden border-3 border-black"
+      className=" w-[200px] h-[200px] overflow-hidden flex-none"
       animate={{
         borderTopRightRadius: ["40% 30%", "60% 60%", "40% 30%"],
         borderBottomLeftRadius: ["70% 40%", "40% 60%", "70% 40%"],

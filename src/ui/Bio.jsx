@@ -18,7 +18,7 @@ function Bio() {
     };
   }, []);
   return (
-    <div className="pr-5 pt-4">
+    <div className="col-start-1 col-end-3 pr-5 pt-4">
       <span className="text-black font-semibold text-3xl pt-6" ref={el} />
 
       {/* <p className="text-black font-semibold text-3xl pt-6">HOUSSEM BENLAGHA</p> */}

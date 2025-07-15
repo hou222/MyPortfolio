@@ -7,11 +7,11 @@ import Bio from "../ui/Bio";
 function Home() {
   return (
     <div className="text-4xl h-screen w-full pt-12 px-5  ">
-      <div className="flex gap-8 ">
+      <div className="grid grid-cols-[0.5fr_3fr] bg-blue-400">
         <Links />
         <PortfolioImage />
+        <Bio />
       </div>
-      <Bio />
       <div className=" pt-3">
         <button className="bg-[#333333] text-white px-[30px] py-[5px] rounded-xl text-[15px] ">
           {"Let's Meet"}
