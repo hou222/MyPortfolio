@@ -4,7 +4,7 @@ import linkedinimg from "../data/New/linkedin (1).png";
 
 function Links() {
   return (
-    <div className=" flex flex-col items-start justify-center   bg-red-500 gap-5 ">
+    <div className=" flex flex-col items-start justify-center  gap-5 ">
       <a
         href="https://www.linkedin.com/in/ben-hou222/"
         target="_blank"

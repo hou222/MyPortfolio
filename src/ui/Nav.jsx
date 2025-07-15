@@ -7,7 +7,7 @@ function Nav({ isOpen, handleOpen }) {
         isOpen ? "left-0 block" : "-left-full "
       }`}
     >
-      <ul className=" flex flex-col gap-10 font-semibold text-4xl  md:text-xl md:gap-7 lg:gap-10  md:flex-row  m-52 md:m-3 text-white ">
+      <ul className=" flex flex-col gap-10 font-semibold text-4xl  md:text-xl md:gap-7 lg:gap-10  md:flex-row  m-52 md:m-3 text-black ">
         <li>
           <NavLink to="/home" onClick={isOpen && handleOpen}>
             Home
