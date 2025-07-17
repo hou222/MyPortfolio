@@ -1,7 +1,7 @@
 import Home from "./Home";
 function Portfolio() {
   return (
-    <div>
+    <div className="">
       <Home />
       dfd
     </div>

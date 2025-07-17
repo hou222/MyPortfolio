@@ -14,7 +14,7 @@ function Header() {
   }
   return (
     <header
-      className={` z-10 flex justify-between items-center px-3 py-1 fixed top-0 left-0 right-0 text-black transition-all duration-1000 ${
+      className={` z-10 flex justify-between items-center px-5 py-4 md: fixed top-0 left-0 right-0 text-black transition-all duration-1000 max-w-5xl mx-auto ${
         scroll ? "bg-white" : "bg-transparent"
       }`}
     >
