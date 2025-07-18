@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 function Nav({ isOpen, handleOpen }) {
   return (
     <nav
-      className={`transition-all duration-500 absolute top-0 h-screen w-full flex justify-center items-start bg-black md:bg-transparent md:justify-end md:items-center  md:static md:w-2/4 md:h-11 md:transition-none  ${
+      className={`transition-all duration-500 absolute top-0 h-screen w-full flex justify-center items-start bg-black md:bg-transparent md:justify-end md:items-center  md:static md:w-2/4 md:h-11 md:transition-none    ${
         isOpen ? "left-0 block" : "-left-full"
       }`}
     >

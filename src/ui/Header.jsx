@@ -14,28 +14,30 @@ function Header() {
   }
   return (
     <header
-      className={` z-10 flex justify-between items-center px-5 py-4 md: fixed top-0 left-0 right-0 text-black transition-all duration-1000 max-w-5xl mx-auto ${
+      className={` z-10  fixed top-0 left-0 right-0 text-black transition-all duration-1000  ${
         scroll ? "bg-white" : "bg-transparent"
       }`}
     >
-      <p
-        className="z-10 text-3xl font-bold hover:cursor-pointer"
-        onClick={() => navigate("/home")}
-      >
-        HM
-      </p>
+      <div className="flex justify-between items-center px-5 py-4 max-w-5xl mx-auto">
+        <p
+          className="z-10 text-3xl font-bold hover:cursor-pointer"
+          onClick={() => navigate("/home")}
+        >
+          HM
+        </p>
 
-      <Nav isOpen={isOpen} handleOpen={handleOpen} />
+        <Nav isOpen={isOpen} handleOpen={handleOpen} />
 
-      {!isOpen ? (
-        <button className="z-1 md:hidden " onClick={handleOpen}>
-          <IoMenu className="h-10 w-10" />
-        </button>
-      ) : (
-        <button className="z-1 text-white relative " onClick={handleOpen}>
-          <IoClose className="h-10 w-10" />
-        </button>
-      )}
+        {!isOpen ? (
+          <button className="z-1 md:hidden " onClick={handleOpen}>
+            <IoMenu className="h-10 w-10" />
+          </button>
+        ) : (
+          <button className="z-1 text-white relative " onClick={handleOpen}>
+            <IoClose className="h-10 w-10" />
+          </button>
+        )}
+      </div>
     </header>
   );
 }
