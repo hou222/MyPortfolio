@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 function Home() {
   return (
-    <div className="grid gap-28 text-4xl h-screen w-full pt-12 lg:pt-16 px-5  max-w-5xl mx-auto">
+    <div className="grid gap-28 h-screen w-full pt-12 lg:pt-16 px-5  max-w-5xl mx-auto">
       <div className="grid grid-cols-[0.5fr_3fr] md:grid-cols-[100px_1fr_1fr] lg:grid-cols-[116px_1fr_1fr] md:items-center gap-5">
         <Links />
         <PortfolioImage img={photo} size="small" />

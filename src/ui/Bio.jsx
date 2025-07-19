@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { RiSendPlaneLine } from "react-icons/ri";
 import Typed from "typed.js";
+import Button from "./Button";
 
 function Bio() {
   const el = useRef(null);
@@ -20,12 +21,14 @@ function Bio() {
   }, []);
   return (
     <div className="col-start-1 col-end-3 md:col-start-auto md:col-end-auto  pr-5 md:pt-4">
-      <span
-        className="text-black font-medium text-3xl lg:text-[34px] "
-        ref={el}
-      />
+      <h3 className="text-black font-medium text-3xl lg:text-[34px]">
+        <span ref={el} />
+      </h3>
 
-      {/* <p className="text-black font-semibold text-3xl pt-6">HOUSSEM BENLAGHA</p> */}
+      <span className="text-black font-medium text-3xl bg-red-500 lg:text-[34px] ">
+        |
+      </span>
+
       <p className="relative block text-[15px] lg:text-[21px] md:font-sem before:content-[''] before:absolute before:inline before:h-[1px] before:w-[40px]  before:top-1/2 before:max-w-[200px]  before:left-0 before:bg-black pl-[50px] text-[#333333] lg:py-2">
         Fontend Developer
       </p>
@@ -38,10 +41,10 @@ function Bio() {
         continue learning and growing in this field.
       </p>
       <div className=" pt-1 md:pt-4 lg:pt-8">
-        <button className="flex justify-center items-center bg-[#333333] text-white px-[30px] py-[5px] rounded-xl text-[15px] lg:px-[35px] lg:py-[10px]">
+        <Button>
           {"Let's Meet"}
           <RiSendPlaneLine className="inline ml-2" color="white" />
-        </button>
+        </Button>
       </div>
     </div>
   );

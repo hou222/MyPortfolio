@@ -4,7 +4,7 @@ function PortfolioImage({ img, size }) {
   const small =
     " w-[180px] h-[180px] md:w-[250px] md:h-[250px]  lg:w-[300px] lg:h-[300px] md:order-1 lg:mt-11";
 
-  const big = "w-[220px] h-[330px]";
+  const big = "w-[220px] h-[330px]  lg:w-[300px] lg:h-[450px]";
   return (
     <motion.div
       className={`${

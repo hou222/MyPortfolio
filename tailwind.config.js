@@ -8,6 +8,13 @@ export default {
         project: "url('/src/data/project-bg.jpg')",
       },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "980px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
   },
   plugins: [],
 };
