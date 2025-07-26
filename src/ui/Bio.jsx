@@ -25,10 +25,6 @@ function Bio() {
         <span ref={el} />
       </h3>
 
-      <span className="text-black font-medium text-3xl bg-red-500 lg:text-[34px] ">
-        |
-      </span>
-
       <p className="relative block text-[15px] lg:text-[21px] md:font-sem before:content-[''] before:absolute before:inline before:h-[1px] before:w-[40px]  before:top-1/2 before:max-w-[200px]  before:left-0 before:bg-black pl-[50px] text-[#333333] lg:py-2">
         Fontend Developer
       </p>

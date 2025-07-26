@@ -7,7 +7,7 @@ function About() {
   return (
     <div className="py-4 px-5  max-w-5xl mx-auto">
       <div className=" text-center py-4">
-        <h3 className="text-xl md:text-2xl lg:text-4xl font-medium">
+        <h3 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
           You Wanna Know Me ?
         </h3>
         <p className="text-xs lg:text-sm text-[#757575] pt-1">

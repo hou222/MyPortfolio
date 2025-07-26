@@ -1,12 +1,22 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Skill({ children, skillName }) {
+function Skill({ children, skillName, center }) {
+  const add = "col-start-2 col-end-3";
   return (
-    <div className="bg-gray-800 w-[110px] md:w-[350px] lg:w-[400px]  p-3 flex flex-col md:flex-row justify-center md:justify-start items-center gap-1 md:gap-7">
-      <LazyLoadImage src={skillName} alt="skill" loading="lazy" />
-      <h1 className="text-white font-semibold text-xl text-center">
-        {children}
-      </h1>
+    <div
+      className={`bg-white shadow-md w-full rounded-lg    py-10 flex flex-col  justify-center  items-center gap-4 ${
+        center ? add : ""
+      }`}
+    >
+      <div className="bg-black p-3 rounded-md flex justify-center items-center">
+        <LazyLoadImage
+          src={skillName}
+          className="w-[40px] h-[40px]"
+          alt="skill"
+          loading="lazy"
+        />
+      </div>
+      <h1 className=" font-semibold text-xl text-center">{children}</h1>
     </div>
   );
 }
