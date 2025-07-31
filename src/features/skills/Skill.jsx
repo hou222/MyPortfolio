@@ -1,7 +1,7 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function Skill({ children, skillName, center }) {
-  const add = "col-start-2 col-end-3";
+function Skill({ children, skillName, center = false }) {
+  const add = "xl:col-start-2 xl:col-end-3";
   return (
     <div
       className={`bg-white shadow-md w-full rounded-lg    py-10 flex flex-col  justify-center  items-center gap-4 ${

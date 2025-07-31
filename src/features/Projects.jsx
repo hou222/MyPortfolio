@@ -3,10 +3,13 @@ import project1 from "../data/project1.png";
 import project2 from "../data/project23.png";
 import project3 from "../data/project33.png";
 import project4 from "../data/project44.png";
+import { useState } from "react";
 
 function Projects() {
+  const [activeItem, setActiveItem] = useState(null);
   const projects = [
     {
+      id: 1,
       live: "https://gym-type.vercel.app/",
       code: "https://github.com/hou222/GymType",
       title: "Gym type",
@@ -17,6 +20,7 @@ function Projects() {
     },
 
     {
+      id: 2,
       live: "https://crypto-tracker-gamma-navy.vercel.app/",
       code: "https://github.com/hou222/CryptoTracker",
       title: "Coin wave",
@@ -26,6 +30,7 @@ function Projects() {
       image: project3,
     },
     {
+      id: 3,
       live: "https://furniture-world.vercel.app",
       code: "https://github.com/hou222/FurnitureWorld",
       title: "Furniture world",
@@ -36,6 +41,7 @@ function Projects() {
     },
 
     {
+      id: 4,
       live: "https://weatheer-appp.netlify.app/",
       code: "https://github.com/hou222/weatherApp",
       title: "'Tempo' Weather App",
@@ -47,14 +53,24 @@ function Projects() {
   ];
 
   return (
-    <div className="bg-black  py-11 flex flex-col  justify-center items-center ">
-      <p className="text-white font-bold text-3xl text-center  pb-11">
-        Projects
-      </p>
-      <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 ">
+    <div className=" flex flex-col  justify-center gap-3 items-center py-4 px-5  max-w-5xl mx-auto">
+      <div className="text-center py-4">
+        <p className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
+          My Projects
+        </p>
+        <p className="text-xs lg:text-sm text-[#757575] pt-1">
+          These Are My Latest Projects
+        </p>
+      </div>
+      <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-7 md:grid-cols-2 xl:grid-cols-3">
         {/* <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 "> */}
         {projects.map((project) => (
-          <ProjectDetails key={project.code} project={project}>
+          <ProjectDetails
+            key={project.code}
+            project={project}
+            setActiveItem={setActiveItem}
+            activeItem={activeItem}
+          >
             {/* {project.description}
             <br></br>
             <br></br> built with : {project.tools} */}

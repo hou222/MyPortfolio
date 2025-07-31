@@ -9,8 +9,8 @@ import typescript from "../data/New/typescript.png";
 
 function Skills() {
   return (
-    <div className="  px-5  max-w-5xl mx-auto pt-11 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-10">
-      <div className=" text-center py-4">
+    <div className="px-5 bg-red-400 max-w-5xl mx-auto pt-16 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-5">
+      <div className=" text-center py-4 ">
         <h3 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
           My Skills
         </h3>
@@ -18,14 +18,14 @@ function Skills() {
           {"Let's See What Can I Do :"}
         </p>
       </div>
-      <div className=" w-full  grid grid-cols-1 gap-5 md:py-10  md:justify-items-center md:grid-cols-2 xl:grid-cols-3 ">
+      <div className=" w-full  grid grid-cols-1 gap-5   md:justify-items-center md:grid-cols-2 xl:grid-cols-3 ">
         <Skill skillName={html}>HTML</Skill>
 
         <Skill skillName={css}>CSS</Skill>
-        <Skill skillName={javascript}>JS</Skill>
-        <Skill skillName={tailwind}>TAILWIND</Skill>
+        <Skill skillName={javascript}>JavaScript</Skill>
+        <Skill skillName={tailwind}>Tailwind</Skill>
         <Skill skillName={responsive}>Responsive Design</Skill>
-        <Skill skillName={react}>REACT</Skill>
+        <Skill skillName={react}>Rreact</Skill>
         <Skill skillName={typescript} center={true}>
           TypeScript
         </Skill>
