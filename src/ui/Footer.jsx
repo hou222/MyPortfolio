@@ -4,8 +4,8 @@ import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="bg-[#111111] text-white grid grid-cols-1 md:grid-cols-2  p-11">
-      <ul className="p-5 ">
+    <div className="bg-white text-[#333333]   p-11">
+      {/* <ul className="p-5 ">
         <li className="flex gap-3">
           <FaHouseChimney />
           <a>Biskra ,Algeria</a>
@@ -18,14 +18,14 @@ function Footer() {
           <MdEmail />
           <span>houssambenlagha0@gmail.com</span>
         </li>
-      </ul>
+      </ul> */}
 
-      <div className="p-5 flex flex-col justify-center items-start gap-2">
-        <p className="font-semibold">About the company</p>
-        <p>
-          This is me Houssam Benlagha. I enjoy discussing new projects and
-          design challenges.
-        </p>
+      <div className="py-4 flex flex-col justify-center items-center gap-8">
+        <p className="text-4xl font-medium">Benlagha</p>
+        <ul className="flex gap-2 font-light">
+          <li>About</li>
+          <li>Projects</li>
+        </ul>
         <div className="flex gap-3">
           <a
             href="https://www.facebook.com/houssam.benlagha/"

@@ -19,13 +19,23 @@ function About() {
 
         <div className="text-center flex flex-col items-center py-6  lg:items-start lg:gap-8">
           <p className="text-[15px] md:text-[16px] leading-[24px] text-center lg:text-start text-[#757575] pb-5 lg:pr-24">
+            As a Junior Front-End Developer, I possess an impressive of skills
+            in HTML, CSS, JavaScript, React, Tailwind, Typescript. I excel in
+            designing and maintaining responsive websites that offer a smooth
+            user experience. My expertise lies in crafting dynamic, engaging
+            interfaces through writing clean and optimzed code and utilizing
+            cutting-edge develpment tools and tchniques. I am also a team player
+            who thrives in collaborating with cross-functional teams to produce
+            outstanding web applications.
+          </p>
+          {/* <p className="text-[15px] md:text-[16px] leading-[24px] text-center lg:text-start text-[#757575] pb-5 lg:pr-24">
             I am a passionate MERN Stack Developer, fueled by an unwavering love
             for creating beautiful and functional digital experiences. With
             expertise in React, HTML, CSS, JavaScript, TypeScript, and Next.js,
             I am dedicated to continuously refining my skills and embracing
             cutting-edge technologies to stay at the forefront of web
             development.
-          </p>
+          </p> */}
           <Button>
             {"Persue My Résumé"}
             <img src={download} alt="" />
