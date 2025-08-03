@@ -53,14 +53,17 @@ function Projects() {
   ];
 
   return (
-    <div className=" flex flex-col  justify-center gap-3 items-center py-4 px-5  max-w-5xl mx-auto">
+    <div
+      id="projects"
+      className=" flex flex-col  justify-center gap-3 items-center py-4 px-5  max-w-5xl mx-auto"
+    >
       <div className="text-center py-4">
-        <p className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
+        <h2 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
           My Projects
-        </p>
-        <p className="text-xs lg:text-sm text-[#757575] pt-1">
+        </h2>
+        <span className="text-xs lg:text-sm text-[#757575] pt-1">
           These Are My Latest Projects
-        </p>
+        </span>
       </div>
       <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-7 md:grid-cols-2 xl:grid-cols-3">
         {/* <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 "> */}

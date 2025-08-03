@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Nav({ isOpen, handleOpen }) {
   return (
@@ -9,30 +9,34 @@ function Nav({ isOpen, handleOpen }) {
     >
       <ul className=" flex flex-col gap-10 font-semibold md:font-light  text-4xl  md:text-xs lg:text-sm md:gap-8 lg:gap-10 text-nowrap md:flex-row  m-52 md:m-0 text-black ">
         <li>
-          <NavLink to="/home" onClick={isOpen && handleOpen}>
+          <HashLink smooth to="#home" onClick={() => isOpen && handleOpen()}>
             Home
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink to="/about" onClick={isOpen && handleOpen}>
+          <HashLink smooth to="#about" onClick={() => isOpen && handleOpen()}>
             About
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink to="/skills" onClick={isOpen && handleOpen}>
+          <HashLink smooth to="#skills" onClick={() => isOpen && handleOpen()}>
             Skills
-          </NavLink>
+          </HashLink>
         </li>
         <li>
-          <NavLink to="/project" onClick={isOpen && handleOpen}>
+          <HashLink
+            smooth
+            to="#projects"
+            onClick={() => isOpen && handleOpen()}
+          >
             Projects
-          </NavLink>
+          </HashLink>
         </li>
 
         <li>
-          <NavLink to="/contact" onClick={isOpen && handleOpen}>
+          <HashLink smooth to="#contact" onClick={() => isOpen && handleOpen()}>
             Hire Me
-          </NavLink>
+          </HashLink>
         </li>
       </ul>
     </nav>

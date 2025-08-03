@@ -2,7 +2,7 @@ import Projects from "../features/Projects";
 
 function Project() {
   return (
-    <>
+    <div id="projects">
       <div
         className={`bg-project bg-cover h-[520px] w-full bg-center bg-no-repeat`}
       >
@@ -18,7 +18,7 @@ function Project() {
         </div>
       </div>
       <Projects />
-    </>
+    </div>
   );
 }
 

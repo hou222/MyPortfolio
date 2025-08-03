@@ -9,14 +9,17 @@ import typescript from "../data/New/typescript.png";
 
 function Skills() {
   return (
-    <div className="px-5 max-w-5xl mx-auto pt-16 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-5">
+    <div
+      id="skills"
+      className="px-5 max-w-5xl mx-auto pt-16 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-5"
+    >
       <div className=" text-center py-4 ">
-        <h3 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
+        <h2 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
           My Skills
-        </h3>
-        <p className="text-xs lg:text-sm text-[#757575] pt-1">
+        </h2>
+        <span className="text-xs lg:text-sm text-[#757575] pt-1">
           {"Let's See What Can I Do :"}
-        </p>
+        </span>
       </div>
       <div className=" w-full  grid grid-cols-1 gap-5   md:justify-items-center md:grid-cols-2 xl:grid-cols-3 ">
         <Skill skillName={html}>HTML</Skill>

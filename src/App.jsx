@@ -10,7 +10,6 @@ import Portfolio from "./pages/Portfolio";
 function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<Navigate replace to="portfolio" />} />

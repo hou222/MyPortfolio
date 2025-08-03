@@ -1,6 +1,7 @@
 import { FaHouseChimney, FaXTwitter } from "react-icons/fa6";
 import { FaPhone, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
 function Footer() {
   return (
@@ -23,8 +24,16 @@ function Footer() {
       <div className="py-4 flex flex-col justify-center items-center gap-8">
         <p className="text-4xl font-medium">Benlagha</p>
         <ul className="flex gap-2 font-light">
-          <li>About</li>
-          <li>Projects</li>
+          <li>
+            <HashLink smooth to="#about">
+              About
+            </HashLink>
+          </li>
+          <li>
+            <HashLink smooth to="#projects">
+              Projects
+            </HashLink>
+          </li>
         </ul>
         <div className="flex gap-3">
           <a

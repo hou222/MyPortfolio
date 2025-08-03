@@ -2,17 +2,17 @@ import PortfolioImage from "../ui/PortfolioImage";
 import photo from "../data/New/photo2.jpg";
 import download from "../data/New/download.png";
 import Button from "../ui/Button";
-
+import cv from "../../public/BenlaghaHoussem-cv.pdf";
 function About() {
   return (
-    <div className="py-4 px-5  max-w-5xl mx-auto">
+    <div id="about" className="py-4 px-5  max-w-5xl mx-auto">
       <div className=" text-center py-4">
-        <h3 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
+        <h2 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">
           You Wanna Know Me ?
-        </h3>
-        <p className="text-xs lg:text-sm text-[#757575] pt-1">
+        </h2>
+        <span className="text-xs lg:text-sm text-[#757575] pt-1">
           Some Info About Me:
-        </p>
+        </span>
       </div>
       <div className="py-10 flex flex-col lg:flex-row items-center lg:gap-12">
         <PortfolioImage img={photo} size="big" />
@@ -36,10 +36,15 @@ function About() {
             cutting-edge technologies to stay at the forefront of web
             development.
           </p> */}
-          <Button>
+
+          <a
+            href={cv}
+            className="flex justify-center items-center gap-2 text-sm md:text-base bg-[#333333] text-white px-[28px] py-[14px] rounded-xl text-[14px] font-light  lg:px-[30px] lg:py-[18px] "
+            download
+          >
             {"Persue My Résumé"}
-            <img src={download} alt="" />
-          </Button>
+            <img src={download} alt="download cv" />
+          </a>
         </div>
       </div>
     </div>
