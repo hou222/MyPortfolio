@@ -55,7 +55,7 @@ function Projects() {
   return (
     <div
       id="projects"
-      className=" flex flex-col  justify-center gap-3 items-center py-4 px-5  max-w-5xl mx-auto"
+      className=" flex flex-col  justify-center gap-3 items-center pb-4 pt-16 px-5  max-w-5xl mx-auto"
     >
       <div className="text-center py-4">
         <h2 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">

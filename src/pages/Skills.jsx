@@ -11,7 +11,7 @@ function Skills() {
   return (
     <div
       id="skills"
-      className="px-5 max-w-5xl mx-auto pt-16 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-5"
+      className="px-5 max-w-5xl mx-auto pt-16 pb-14 flex flex-col text-[#333333] justify-center items-center gap-3 lg:gap-5 "
     >
       <div className=" text-center py-4 ">
         <h2 className="text-[#333333] text-xl md:text-2xl lg:text-4xl font-medium">

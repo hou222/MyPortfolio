@@ -26,7 +26,7 @@ function Bio() {
       </h1>
 
       <h2 className="relative block text-[15px] lg:text-[21px] py-2 md:font-sem before:content-[''] before:absolute before:inline before:h-[1px] before:w-[40px]  before:top-1/2 before:max-w-[200px]  before:left-0 before:bg-black pl-[50px] text-[#333333] lg:py-2">
-        Fontend Developer
+        Frontend Developer
       </h2>
       <p className="text-[15px] pr-3 md:text-[16px] leading-[24px] py-2 text-start text-[#757575]  lg:py-3">
         🧑‍💻 As a recent computer science graduate with a passion for web
