@@ -1,12 +1,11 @@
 import { useState } from "react";
 import Nav from "./Nav";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { useNavigate } from "react-router-dom";
 import { useScroll } from "../hooks/useScroll";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-  const navigate = useNavigate();
+
   const scroll = useScroll();
 
   function handleOpen() {
@@ -19,21 +18,22 @@ function Header() {
       }`}
     >
       <div className="flex justify-between items-center px-5 py-4 max-w-5xl mx-auto">
-        <p
-          className="z-10 text-3xl font-bold hover:cursor-pointer"
-          onClick={() => navigate("/home")}
-        >
+        <a href="/" className="z-10 text-3xl font-bold hover:cursor-pointer">
           HM
-        </p>
+        </a>
 
         <Nav isOpen={isOpen} handleOpen={handleOpen} />
 
         {!isOpen ? (
-          <button className="z-1 md:hidden " onClick={handleOpen}>
+          <button
+            aria-label="Open menu"
+            className="z-1 md:hidden "
+            onClick={handleOpen}
+          >
             <IoMenu className="h-10 w-10" />
           </button>
         ) : (
-          <button className="z-1 text-white relative " onClick={handleOpen}>
+          <button className="z-1 text-black relative " onClick={handleOpen}>
             <IoClose className="h-10 w-10" />
           </button>
         )}

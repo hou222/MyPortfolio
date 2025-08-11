@@ -1,26 +1,11 @@
-import { FaHouseChimney, FaXTwitter } from "react-icons/fa6";
-import { FaPhone, FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+
 import { HashLink } from "react-router-hash-link";
 
 function Footer() {
   return (
     <div className="bg-white text-[#333333]   p-11">
-      {/* <ul className="p-5 ">
-        <li className="flex gap-3">
-          <FaHouseChimney />
-          <a>Biskra ,Algeria</a>
-        </li>
-        <li className="flex gap-3">
-          <FaPhone />
-          <span>+213 699888694</span>
-        </li>
-        <li className="flex gap-3">
-          <MdEmail />
-          <span>houssambenlagha0@gmail.com</span>
-        </li>
-      </ul> */}
-
       <div className="py-4 flex flex-col justify-center items-center gap-8">
         <p className="text-4xl font-medium">Benlagha</p>
         <ul className="flex gap-2 font-light">
@@ -40,6 +25,7 @@ function Footer() {
             href="https://www.facebook.com/houssam.benlagha/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Facebook"
           >
             <FaFacebook className="w-7 h-7" />
           </a>
@@ -47,6 +33,7 @@ function Footer() {
             href="https://twitter.com/Houssambenlagha"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Twitter"
           >
             <FaXTwitter className="w-7 h-7" />
           </a>
@@ -54,6 +41,7 @@ function Footer() {
             href="https://www.linkedin.com/in/ben-hou222"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Linkedin"
           >
             <FaLinkedin className="w-7 h-7" />
           </a>
@@ -61,6 +49,7 @@ function Footer() {
             href="https://github.com/hou222"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Github"
           >
             <FaGithub className="w-7 h-7" />
           </a>

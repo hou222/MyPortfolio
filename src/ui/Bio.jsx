@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { RiSendPlaneLine } from "react-icons/ri";
 import Typed from "typed.js";
-import Button from "./Button";
+import { HashLink } from "react-router-hash-link";
 
 function Bio() {
   const el = useRef(null);
@@ -35,10 +35,14 @@ function Bio() {
         learning and growing in this field.
       </p>
       <div className=" pt-12 md:pt-4 lg:pt-8">
-        <button className="flex justify-center items-center gap-2 text-sm md:text-base bg-[#333333] text-white px-[28px] py-[14px] rounded-xl text-[14px] font-light  lg:px-[30px] lg:py-[18px] ">
+        <HashLink
+          smooth
+          to="#contact"
+          className="flex w-fit justify-center items-center gap-2 text-sm md:text-base bg-[#333333] text-white px-[28px] py-[14px] rounded-xl text-[14px] font-light  lg:px-[30px] lg:py-[18px]"
+        >
           {"Let's Meet"}
           <RiSendPlaneLine className="inline ml-2" color="white" />
-        </button>
+        </HashLink>
       </div>
     </div>
   );

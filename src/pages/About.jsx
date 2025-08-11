@@ -1,7 +1,6 @@
 import PortfolioImage from "../ui/PortfolioImage";
 import photo from "../data/New/photo2.jpg";
 import download from "../data/New/download.png";
-import Button from "../ui/Button";
 import cv from "../../public/BenlaghaHoussem-cv.pdf";
 function About() {
   return (

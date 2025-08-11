@@ -22,7 +22,12 @@ function PortfolioImage({ img, size }) {
         ease: "easeInOut",
       }}
     >
-      <img src={img} alt="Profile" className="w-full h-full object-cover" />
+      <img
+        src={img}
+        alt="Profile"
+        rel="preload"
+        className="w-full h-full object-cover"
+      />
     </motion.div>
   );
 }

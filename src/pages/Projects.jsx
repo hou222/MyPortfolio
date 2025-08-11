@@ -1,8 +1,9 @@
-import ProjectDetails from "./projects/ProjectDetails";
+import ProjectDetails from "../features/projects/ProjectDetails";
 import project1 from "../data/project1.png";
 import project2 from "../data/project23.png";
 import project3 from "../data/project33.png";
 import project4 from "../data/project44.png";
+import project5 from "../data/project55.png";
 import { useState } from "react";
 
 function Projects() {
@@ -39,9 +40,19 @@ function Projects() {
       tools: "React.js, Tailwind.",
       image: project2,
     },
-
     {
       id: 4,
+      live: "https://lamborghini-ty5c.vercel.app",
+      code: "https://github.com/hou222",
+      title: "Lamborghini",
+      description:
+        "Lamborghini website clone with sleek UI, responsive design, and smooth animations. Replicates the brand’s luxury feel for front-end practice.",
+      tools: "React.js, TypeScript, Tailwind.",
+      image: project5,
+    },
+
+    {
+      id: 5,
       live: "https://weatheer-appp.netlify.app/",
       code: "https://github.com/hou222/weatherApp",
       title: "'Tempo' Weather App",
@@ -66,22 +77,14 @@ function Projects() {
         </span>
       </div>
       <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-7 md:grid-cols-2 xl:grid-cols-3">
-        {/* <div className=" w-fit mb-11 grid grid-cols-1 gap-7 lg:gap-10 md:grid-cols-2 xl:grid-cols-3 "> */}
         {projects.map((project) => (
           <ProjectDetails
             key={project.code}
             project={project}
             setActiveItem={setActiveItem}
             activeItem={activeItem}
-          >
-            {/* {project.description}
-            <br></br>
-            <br></br> built with : {project.tools} */}
-          </ProjectDetails>
+          ></ProjectDetails>
         ))}
-
-        {/* <ProjectDetails imageName={project2} />
-        <ProjectDetails imageName={project3} /> */}
       </div>
     </div>
   );
