@@ -8,7 +8,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="flex flex-col gap-48   w-full pt-12 lg:pt-16 px-5  max-w-5xl mx-auto"
+      className="flex flex-col gap-48   w-full pt-20 lg:pt-24 px-5  max-w-5xl mx-auto"
     >
       <div className="grid items-center grid-cols-[0.5fr_3fr] md:grid-cols-[100px_1fr_1fr] lg:grid-cols-[116px_1fr_1fr] md:items-center gap-5">
         <Links />
@@ -16,7 +16,7 @@ function Home() {
         <Bio />
       </div>
       <div className="hidden md:block">
-        <div className=" w-fit p-3 flex gap-3 ml-[120px] items-center">
+        <div className=" w-fit px-3 py-1 flex gap-3 ml-[120px] items-center">
           <div className=" w-[20px] h-[35px]  border-2 border-black rounded-2xl flex justify-center items-start">
             <motion.div
               initial={{ y: 3 }}
