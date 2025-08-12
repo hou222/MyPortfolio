@@ -3,7 +3,7 @@ function ProjectDetails({ project, setActiveItem, activeItem }) {
   return (
     <div className="bg-white shadow-md rounded-lg  px-3  pt-3 pb-5 flex flex-col gap-3">
       <div
-        className="relative  overflow-hidden rounded-lg bg-blue-300 "
+        className="relative  overflow-hidden rounded-lg "
         onClick={() => setActiveItem(project.id)}
         onMouseEnter={() => setActiveItem(project.id)}
         onMouseLeave={() => setActiveItem(false)}
