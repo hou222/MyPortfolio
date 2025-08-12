@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Nav from "./Nav";
-import { IoMenu, IoClose } from "react-icons/io5";
 import { useScroll } from "../hooks/useScroll";
+import { IoIosMenu } from "react-icons/io";
+import { MdClose } from "react-icons/md";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,8 +19,11 @@ function Header() {
       }`}
     >
       <div className="flex justify-between items-center px-5 py-4 max-w-5xl mx-auto">
-        <a href="/" className="z-10 text-3xl font-bold hover:cursor-pointer">
-          HM
+        <a
+          href="/"
+          className="z-10 text-3xl font-medium hover:cursor-pointer font-['Edu_NSW_ACT_Cursive',cursive]"
+        >
+          Hm
         </a>
 
         <Nav isOpen={isOpen} handleOpen={handleOpen} />
@@ -30,11 +34,11 @@ function Header() {
             className="z-1 md:hidden "
             onClick={handleOpen}
           >
-            <IoMenu className="h-10 w-10" />
+            <IoIosMenu className="h-10 w-10" />
           </button>
         ) : (
           <button className="z-1 text-black relative " onClick={handleOpen}>
-            <IoClose className="h-10 w-10" />
+            <MdClose className="h-8 w-8" />
           </button>
         )}
       </div>
