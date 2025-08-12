@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { RiShareBoxFill } from "react-icons/ri";
 function ProjectDetails({ project, setActiveItem, activeItem }) {
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
     <div className="bg-white shadow-md rounded-lg  px-3  pt-3 pb-5 flex flex-col gap-3">
       <div
@@ -8,12 +11,23 @@ function ProjectDetails({ project, setActiveItem, activeItem }) {
         onMouseEnter={() => setActiveItem(project.id)}
         onMouseLeave={() => setActiveItem(false)}
       >
+        <div
+          className={`${
+            isLoading ? "" : "hidden"
+          } max-w-full h-48 max-h-full animate-pulse bg-slate-200 `}
+        ></div>
+
         <img
           src={project.image}
           width={1000}
           height={1000}
           loading="lazy"
-          className="max-w-full h-48 max-h-full object-cover object-top rounded-lg"
+          onLoad={() => {
+            setIsLoading(false);
+          }}
+          className={`${
+            isLoading ? "invisible" : ""
+          } max-w-full h-48 max-h-full object-cover object-top rounded-lg`}
           alt="project photo"
         />
 
