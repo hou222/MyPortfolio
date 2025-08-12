@@ -18,7 +18,7 @@ function Header() {
         scroll ? "bg-white" : "bg-transparent"
       }`}
     >
-      <div className="flex justify-between items-center px-5 py-4 max-w-5xl mx-auto">
+      <div className="flex justify-between items-center px-5 py-4 max-w-5xl mx-auto ">
         <a
           href="/"
           className="z-10 text-3xl font-medium hover:cursor-pointer font-['Edu_NSW_ACT_Cursive',cursive]"
@@ -38,7 +38,7 @@ function Header() {
           </button>
         ) : (
           <button className="z-1 text-black relative " onClick={handleOpen}>
-            <MdClose className="h-8 w-8" />
+            <MdClose className="h-8 w-8 m-1" />
           </button>
         )}
       </div>
