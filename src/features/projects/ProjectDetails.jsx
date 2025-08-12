@@ -14,7 +14,7 @@ function ProjectDetails({ project, setActiveItem, activeItem }) {
         <div
           className={`${
             isLoading ? "" : "hidden"
-          } max-w-full h-48 max-h-full animate-pulse bg-slate-200 `}
+          } max-w-full h-48 max-h-full animate-pulse bg-slate-200 absolute top-0    bottom-0`}
         ></div>
 
         <img
