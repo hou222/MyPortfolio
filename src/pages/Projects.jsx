@@ -9,7 +9,7 @@ import { useState } from "react";
 function Projects() {
   const [activeItem, setActiveItem] = useState(null);
   const projects = [
-    {
+    /* {
       id: 1,
       live: "https://gym-type.vercel.app/",
       code: "https://github.com/hou222/GymType",
@@ -18,10 +18,10 @@ function Projects() {
         "Achieve your dream body with unrivaled gym facilities, unparalleled training classes, and world-class studios.",
       tools: "React.js, TypeScript, Tailwind.",
       image: project4,
-    },
+    }, */
 
     {
-      id: 2,
+      id: 1,
       live: "https://crypto-tracker-gamma-navy.vercel.app/",
       code: "https://github.com/hou222/CryptoTracker",
       title: "Coin wave",
@@ -31,7 +31,7 @@ function Projects() {
       image: project3,
     },
     {
-      id: 3,
+      id: 2,
       live: "https://furniture-world.vercel.app",
       code: "https://github.com/hou222/FurnitureWorld",
       title: "Furniture world",
@@ -41,7 +41,7 @@ function Projects() {
       image: project2,
     },
     {
-      id: 4,
+      id: 3,
       live: "https://lamborghini-ty5c.vercel.app",
       code: "https://github.com/hou222",
       title: "Lamborghini",
@@ -52,7 +52,7 @@ function Projects() {
     },
 
     {
-      id: 5,
+      id: 4,
       live: "https://weatheer-appp.netlify.app/",
       code: "https://github.com/hou222/weatherApp",
       title: "'Tempo' Weather App",
