@@ -12,7 +12,6 @@ function App() {
           <Route index element={<Navigate replace to="portfolio" />} />
           <Route path="portfolio" element={<Portfolio />} />
         </Route>
-
         <Route path="*" element={<p>Page not found</p>} />
       </Routes>
       <Analytics />
